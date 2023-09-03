@@ -1,6 +1,7 @@
 import random
 
 #Board size
+
 board = [" "] * 52
 
 player1 = input("Enter a name of player 1: ").capitalize()
@@ -14,9 +15,11 @@ def roll_dice():
 
 def move_player(player_position, steps):
     player_position += steps
-    if player_position > 51:
-        player_position -=52
+    if player_position >= 51:
+        player_position -= 52
     return player_position
+
+
 
 #while loop
 while True:
