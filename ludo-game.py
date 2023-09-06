@@ -26,12 +26,14 @@ while True:
     input(f"{player1}, press enter to roll the dice: ")
     result = roll_dice()   
     print(f"{player1} rolled a : {result}")
+
     player1_position = move_player(player1_position, result)
     print(f"{player1} moved from {player1_position - result} to {player1_position} steps.")
 
     input(f"{player2}, press enter to roll the dice: ")
     result = roll_dice()    
     print(f"{player2} rolled a: {result} ")
+
     player2_position = move_player(player2_position, result) 
     print(f"{player2} moved from {player2_position - result} to {player2_position} steps.")
 
